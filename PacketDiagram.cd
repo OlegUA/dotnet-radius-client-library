@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Ais.Net.Radius.Packet">
+    <Position X="8.75" Y="0.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAiAAAAAAAAACQCgAhAABBQQAAAAoAACAAAIAAoACE=</HashCode>
+      <FileName>Packet.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="PacketType" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Ais.Net.Radius.Request">
+    <Position X="7.5" Y="7.75" Width="6" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAACA=</HashCode>
+      <FileName>Request.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Packet" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Ais.Net.Radius.Response">
+    <Position X="5.25" Y="2.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Response.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Packet" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Ais.Net.Radius.AccessRequest">
+    <Position X="0.5" Y="10" Width="6.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AccessRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ais.Net.Radius.AccountingRequest">
+    <Position X="8" Y="10" Width="12.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AccountingRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Ais.Net.Radius.PacketType" Collapsed="true">
+    <Position X="13.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAACgAAAgAAAAAAEAAAIAAAEAAACAAAAAAABAAABA=</HashCode>
+      <FileName>PacketType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

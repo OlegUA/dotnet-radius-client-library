@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Ais.Net.Radius.Attributes.Attribute">
+    <Position X="19.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAIgAAAAAAAAAAgAYAAAAABQAAAAAAAACAAAAAAAQAA=</HashCode>
+      <FileName>Attributes\Attribute.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AttributeType" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Ais.Net.Radius.Attributes.AuthenticationTypeAttribute">
+    <Position X="18.25" Y="7" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Attributes\AuthenticationTypeAttribute.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Value" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Ais.Net.Radius.Attributes.IntegerAttribute">
+    <Position X="18.5" Y="4.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Attributes\IntegerAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ais.Net.Radius.Attributes.IpAddressAttribute">
+    <Position X="29.5" Y="4.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Attributes\IPAddressAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ais.Net.Radius.Attributes.NasPortTypeAttribute">
+    <Position X="25.75" Y="7" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Attributes\NasPortTypeAttribute.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Value" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Ais.Net.Radius.Attributes.PasswordAttribute">
+    <Position X="4.25" Y="7" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAIAAAAAA=</HashCode>
+      <FileName>Attributes\PasswordAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ais.Net.Radius.Attributes.ServiceTypeAttribute">
+    <Position X="11" Y="7" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Attributes\ServiceTypeAttribute.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Value" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Ais.Net.Radius.Attributes.StatusTypeAttribute">
+    <Position X="22.25" Y="7" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Attributes\StatusTypeAttribute.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Value" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Ais.Net.Radius.Attributes.TerminateCauseAttribute">
+    <Position X="14.5" Y="7" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Attributes\TerminateCauseAttribute.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Value" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Ais.Net.Radius.Attributes.VendorSpecificAttribute">
+    <Position X="33" Y="4.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIQAAAAAAAAAAAAAAAAQAgAAAIAQA=</HashCode>
+      <FileName>Attributes\VendorSpecificAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ais.Net.Radius.Attributes.TextAttribute">
+    <Position X="7.75" Y="7" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Attributes\TextAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ais.Net.Radius.Attributes.StringAttribute">
+    <Position X="6" Y="4.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Attributes\StringAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Ais.Net.Radius.Attributes.AttributeType" Collapsed="true">
+    <Position X="16.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RQY5oCIoggAAAFCAFAoJACTBBBAFQOBAgQIUBCIAChA=</HashCode>
+      <FileName>Attributes\AttributeType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Ais.Net.Radius.Attributes.ServiceType" Collapsed="true">
+    <Position X="11.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBAAAAEgAAAAIAAAAAAAIEAAAAAAAAAAAAAQACAAADE=</HashCode>
+      <FileName>Attributes\ServiceType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Ais.Net.Radius.Attributes.TerminateCauseType" Collapsed="true">
+    <Position X="15.25" Y="5.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>kAAQAgAAAAQAAAAAgAAAADAAAMAAAKgQAAEAAAABQhA=</HashCode>
+      <FileName>Attributes\TerminateCauseType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Ais.Net.Radius.Attributes.AuthenticationType" Collapsed="true">
+    <Position X="19" Y="9.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAQAAAAAAAAAAAAAABAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Attributes\AuthenticationType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Ais.Net.Radius.Attributes.StatusType" Collapsed="true">
+    <Position X="23" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAACAAAAAEAAAAAAIAAAAAAAAAYAAAAAAAABA=</HashCode>
+      <FileName>Attributes\StatusType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Ais.Net.Radius.Attributes.NasPortType" Collapsed="true">
+    <Position X="26.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQQAgBgCAIACAAAIBCIAEAAAAAAAoAACAIAAAAAA=</HashCode>
+      <FileName>Attributes\NasPortType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
