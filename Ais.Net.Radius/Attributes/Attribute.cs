@@ -9,33 +9,17 @@ namespace Ais.Net.Radius.Attributes
     /// </summary>
     public abstract class Attribute
     {
-        #region Constants
-
         protected const byte TechLength = 2;
-
-        #endregion
-
-        #region Fields
 
         private readonly AttributeType _attributeType;
         private byte[] _valueArray;
-        
-        #endregion
 
-        #region Constructor
 
         protected Attribute(AttributeType attributeType)
         {
             _attributeType = attributeType;
         }
-        
-        #endregion
 
-        #region Properties
-
-        /// <summary>
-        /// Type of the attribute. Possible values described in AttributeType enumeration.
-        /// </summary>
         public AttributeType AttributeType
         {
             get
@@ -63,15 +47,13 @@ namespace Ais.Net.Radius.Attributes
         {
             get
             {
-                return _valueArray ?? (_valueArray = ValueToByteArray());
+                if (_valueArray == null)
+                    _valueArray = ValueToByteArray();
+                return _valueArray;
             }
         }
 
         protected abstract byte[] ValueToByteArray();
-
-        #endregion
-
-        #region Methods
 
         /// <summary>
         /// Assembles radius attribute and prepares it for sending.
@@ -93,17 +75,20 @@ namespace Ais.Net.Radius.Attributes
             if (source.Length < 3)
                 return null;
 
-            Attribute result;
+            //var attributeTypes = new List<byte>();
+            //attributeTypes.AddRange(Enum.GetValues(typeof (AttributeType)));
+
+            Attribute result = null;
             var attributeType = AttributeType.Unknown;
 
             foreach (int value in Enum.GetValues(typeof(AttributeType)))
                 if (value == source[0])
-                    attributeType = (AttributeType)value;
+                    attributeType = (AttributeType) value;
 
             var sourceValue = new byte[source.Length - 2];
             Array.Copy(source, 2, sourceValue, 0, sourceValue.Length);
 
-            //TODO: Add other attribute types
+            //TODO: Add other attributes
             switch (attributeType)
             {
                 case AttributeType.NasIpAddress:
@@ -118,10 +103,13 @@ namespace Ais.Net.Radius.Attributes
                 case AttributeType.AcctAuthentic:
                     result =
                         new AuthenticationTypeAttribute(
-                            (AuthenticationType)BitConverter.ToUInt32(sourceValue, 0));
+                            (AuthenticationType) BitConverter.ToUInt32(sourceValue, 0));
                     break;
                 case AttributeType.AcctStatusType:
                     result = new StatusTypeAttribute((StatusType)BitConverter.ToUInt32(sourceValue, 0));
+                    break;
+                case AttributeType.ReplyMessage:
+                    result = new ReplyMessage(Encoding.UTF8.GetString(sourceValue));
                     break;
                 default:
                     result = new StringAttribute(attributeType, Encoding.UTF8.GetString(sourceValue));
@@ -130,7 +118,5 @@ namespace Ais.Net.Radius.Attributes
 
             return result;
         }
-
-        #endregion
     }
 }

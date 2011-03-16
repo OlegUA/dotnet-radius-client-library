@@ -125,13 +125,13 @@ namespace Ais.Net.Radius
         }
 
         /// <summary>
-        /// Sends request packet several times/
+        /// Sends request packet several times.
         /// </summary>
         /// <param name="request">Request to radius server.</param>
         /// <param name="asyncReceive">If true - packet sends asynchronously.</param>
-        /// <param name="numberOfTries">number of tries to send packet.</param>
+        /// <param name="numberOfTries">Number of tries to send packet.</param>
         /// <returns>Response from radius server.</returns>
-        public Response Send(Request request, bool asyncReceive, int numberOfTries)
+        public Response Send(Request request, bool asyncReceive = true, int numberOfTries = 2)
         {
             Response result = null;
             Exception ex = null;
@@ -175,7 +175,7 @@ namespace Ais.Net.Radius
         }
 
         #endregion
-	
+
         #region UdpState class
 
         /// <summary>

@@ -102,6 +102,13 @@
       <FileName>Attributes\StringAttribute.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="Ais.Net.Radius.Attributes.ReplyMessage">
+    <Position X="8.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Attributes\ReplyMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Enum Name="Ais.Net.Radius.Attributes.AttributeType" Collapsed="true">
     <Position X="16.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
